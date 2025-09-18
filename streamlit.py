@@ -91,11 +91,11 @@ if predict_button and not error_flag:
     # Asignar salida y probabilidad según la clase predicha
     # En el script original: #Exited: 0 Cliente retenido;  1 Cliente cerró cuenta
     if class_predicted == 0:
-        outcome = "Cliente Retenido"
+        outcome = "Paciente no sufrio accidente cerebrovascular"
         probability_churn = probabilities_classes[0]
         style_result = 'background-color: lightgreen; font-size: larger;'
     else:
-        outcome = "Churn (Cliente cerró cuenta)"
+        outcome = "Ictus (Paciente sufrio accidente cerebrovascular)"
         probability_churn = probabilities_classes[1]
         style_result = 'background-color: lightcoral; font-size: larger;'
 
@@ -109,4 +109,5 @@ if st.button("Resetear"):
     reset_inputs()
 
 # streamlit run streamlit.py       en la consola
+
 #Coindice con 06_Random_Forest_pipelines.ipynb
