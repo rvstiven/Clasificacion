@@ -37,8 +37,9 @@ def reset_inputs():
     
 reset_inputs()    
 # ------------------------Título centrado-------------------------------------------------
-st.title("Modelo Predictivo de Ictus con Regresión Logística")
-st.markdown("Este modelo predice la probabilidad de que un paciente sufra un ictus según parámetros como el tipo de trabajo, edad, hipertensión, nivel de glucosa, IMC y antecedentes de ictus.")
+st.title("Modelo de Clasificaion Regresión Logística para la prediccion de Accidentes Cerebrovasculares")
+st.subheader("Integrantes: Roger Sebastian Huaranca Rodriguez, Blanca Quispe Quispe y Jean Carlos Quispe Calla")
+st.markdown("Este modelo predice la probabilidad de que un paciente sufra un accidente Cerebro vascular según parámetros como el tipo de trabajo, edad, hipertensión, nivel de glucosa, IMC y antecedentes de ictus.")
 st.markdown("---")
 
 # ----------------------- Función para validar los campos del formulario----------------------------
@@ -111,3 +112,4 @@ if st.button("Resetear"):
 # streamlit run streamlit.py       en la consola
 
 #Coindice con 06_Random_Forest_pipelines.ipynb
+
